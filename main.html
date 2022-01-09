@@ -115,11 +115,51 @@
         }
 
         /* youtube video */
-        youtubeVideo{
+        youtubeVideo {
             align-items: center;
         }
-        .video{
+
+        .video {
             display: inline-block;
+        }
+
+        /* fontawasome */
+      
+
+        .fontawasome {
+            display: flex;
+            border: lawngreen 2px solid;
+            margin: 10px;
+        }
+
+        .awasome {
+            width: 250px;
+            height: 400px;
+            background-color: khaki;
+            border-radius: 10px;
+            margin: 12px;
+            padding: 15px;
+            text-align: justify;
+            box-shadow: 1px 5px 20px black;
+        }
+        .awasome>h3{
+            margin-top: 40px;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        .awasome>p{
+            margin-top: 10px;
+        }
+        .fas ,.far {
+            margin-top: 20px;
+            font-size: 100px;
+            color: tomato;
+        }
+        .awasome:hover{
+            transform: scale(1.1);
+            transition: 0.5s;
+            cursor: pointer;
+            background-color: rgb(151, 236, 151);
         }
     </style>
 </head>
@@ -223,7 +263,7 @@
         </div>
     </section>
 
-    <section id="youtubeVideo">
+    <!-- <section id="youtubeVideo">
         <div class="video" id="v-01">
             <iframe width="200" height="150" src="https://www.youtube.com/embed/kW8-W-dVFPA"
                 title="YouTube video player" frameborder="0"
@@ -240,14 +280,31 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe></div>
+    </section> -->
+
+    <section>
+        <div class="fontawasome">
+            <div class="awasome">
+                <i class="fas fa-user-nurse"></i>
+                <h3>doctor</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis expedita ea earum tenetur
+                    voluptas eaque excepturi doloremque sint explicabo?</p>
+            </div>
+            <div class="awasome">
+                <i class="fas fa-ambulance"></i>                <h3>ambulance</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis expedita ea earum tenetur
+                    voluptas eaque excepturi doloremque sint explicabo?</p>
+            </div>
+            <div class="awasome">
+                <i class="far fa-hospital"></i>
+                <h3>hospital</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi perferendis expedita ea earum tenetur
+                    voluptas eaque excepturi doloremque sint explicabo?</p>
+            </div>
+        </div>
     </section>
 
-    <section class="fontawasome">
-         <div class="awasome">
-             
-         </div>
-
-    </section>
+    <script src="https://kit.fontawesome.com/f0ecdff264.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
