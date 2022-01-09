@@ -31,14 +31,19 @@ h1 {
 ol{
     margin-top: 0;
     margin-bottom:0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .inlineElment {
     background-color: lightcoral;
     text-align: center;
-    margin-top: 0;
+    margin: auto;
     /* padding: 10px; */
     /* why */
-
+}
+.line{
+    display: inline-block;
+    text-align: left;
 }
 
 .block {
