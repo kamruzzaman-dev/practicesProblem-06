@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            width: 850px;
+            margin: auto;
+            border: 2px solid black;
+            font-weight: 500;
+            margin-top: 20px;
+            margin-bottom: 50px;
+
+        }
+
+        h1 {
+            font-size: 40px;
+
+            text-align: center;
+            background-color: tomato;
+            margin: 0;
+        }
+
+        .inlineElment {
+            background-color: lightcoral;
+            text-align: center;
+            margin-top: 0;
+            /* padding: 10px; */
+            /* why */
+
+        }
+
+        .block {
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        h2 {
+            padding: 10px;
+            background-color: tomato;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* table desgin */
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            margin: auto;
+        }
+
+        td,
+        th {
+            border: 2px solid red;
+            padding: 15px;
+        }
+
+        thead {
+            background-color: lightskyblue
+        }
+
+        tr:nth-child(2n) {
+            background-color: rgba(166, 195, 224, 0.541);
+        }
+
+        /* semantic part */
+        .contianer {
+            text-align: center;
+        }
+
+        header {
+            width: 750px;
+            background-color: lightgoldenrodyellow;
+            padding: 50px;
+            font-size: 2.5em;
+        }
+
+        .nav-aticale {
+            display: flex;
+        }
+
+        nav {
+            width: 300px;
+            height: 500px;
+            padding-top: 250px;
+            background-color: lightpink;
+            font-size: 2.5em;
+        }
+
+        article {
+            width: 450px;
+            height: 500px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 250px;
+            background-color: lightgreen;
+            font-size: 2.5em;
+        }
+
+        footer {
+            width: 750px;
+            background-color: lightgoldenrodyellow;
+            padding: 50px;
+            font-size: 2.5em
+        }
+
+        /* youtube video */
+        youtubeVideo{
+            align-items: center;
+        }
+        .video{
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>inline element</h1>
+        <div class="inlineElment">
+            <ol>
+                <li>strong tag</li>
+                <li>span tag</li>
+                <li>small tag</li>
+                <li>em</li>
+                <li>label</li>
+                <li>sub</li>
+                <li>sup</li>
+                <li>img</li>
+                <li>input</li>
+                <li>button</li>
+                <li>br</li>
+            </ol>
+        </div>
+
+        <h1>block element</h1>
+        <div class="block">
+            <ol>
+                <li>p</li>
+                <li>div</li>
+                <li>h1-h6</li>
+                <li>header</li>
+                <li>ol</li>
+                <li>ul</li>
+                <li>section</li>
+                <li>article</li>
+                <li>main</li>
+                <li>footer</li>
+            </ol>
+
+        </div>
+    </section>
+    <section>
+        <caption>
+            <h2>friend list</h2>
+        </caption>
+        <table>
+            <thead>
+                <tr>
+                    <th>Frined name</th>
+                    <th>birth data</th>
+                    <th>living place</th>
+                    <th>treat hobe ki hobe na</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>maink</td>
+                    <td>01-12-2022</td>
+                    <td>chittagong</td>
+                    <td>paoya habe na</td>
+                </tr>
+                <tr>
+                    <td>pias</td>
+                    <td>01-12-2022</td>
+                    <td>naoga</td>
+                    <td>paoya jabe</td>
+                </tr>
+                <tr>
+                    <td>tom</td>
+                    <td>01-12-2022</td>
+                    <td>wuhan, china</td>
+                    <td>paoya jabe</td>
+                </tr>
+                <tr>
+                    <td>arnob</td>
+                    <td>01-12-2022</td>
+                    <td>brahmanbaria</td>
+                    <td>paoya jabe</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="symatics">
+        <h1>HTML5: Semantic Tags/sections</h1>
+        <div class="contianer">
+            <header>
+                header
+            </header>
+            <div class="nav-aticale">
+                <nav>
+                    nav
+                </nav>
+                <article>
+                    article
+                </article>
+            </div>
+            <footer>
+                footer
+            </footer>
+        </div>
+    </section>
+
+    <section id="youtubeVideo">
+        <div class="video" id="v-01">
+            <iframe width="200" height="150" src="https://www.youtube.com/embed/kW8-W-dVFPA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video" id="v-02">
+            <iframe width="200" height="150" src="https://www.youtube.com/embed/sK_VYsKnItY"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video" id="v-03"><iframe width="200" height="150" src="https://www.youtube.com/embed/fNzpcB7ODxQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+    </section>
+
+    <section class="fontawasome">
+         <div class="awasome">
+             
+         </div>
+
+    </section>
+</body>
+
+</html>
